@@ -150,10 +150,10 @@ const Dashboard: React.FC = () => {
           >
             <Plus className="w-6 h-6 text-todo-dark" />
           </button>
-          <button className="p-2">
+          <button onClick={() => navigate('/tasks')} className="p-2">
             <User className="w-6 h-6 text-todo-text-muted" />
           </button>
-          <button className="p-2">
+          <button onClick={() => navigate('/profile')} className="p-2">
             <MoreVertical className="w-6 h-6 text-todo-text-muted" />
           </button>
         </div>

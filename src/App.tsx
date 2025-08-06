@@ -9,6 +9,8 @@ import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
 import CreateTask from "./components/CreateTask";
 import Profile from "./components/Profile";
+import Schedule from "./components/Schedule";
+import TaskList from "./components/TaskList";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/create-task" element={<CreateTask />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/tasks" element={<TaskList />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
